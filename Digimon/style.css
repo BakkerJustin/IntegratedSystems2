@@ -1,0 +1,181 @@
+@import
+url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+/* https://www.pinterest.ca/ajuwon/digivice/ */
+body {
+    background-image: url("/image/background.jpg");
+    /* https://css-tricks.com/using-css-cursors/ */
+    /* https://hypebeast.com/2020/4/bandai-digimon-adventure-last-evolution-kizuna-digivice-release */
+    cursor: url('/image/digivicecursor.png'), auto;
+    
+}
+ .menu {
+    
+     display: flex;
+     flex-wrap: wrap;
+     gap: 1rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 12px;
+ }
+
+ button{
+    cursor: url('/image/digivicecursor.png'), auto;
+     background-color: rgb(255, 196, 68);
+     font-family: 'Orbitron', sans-serif;
+ }
+button:hover{
+background-color: rgb(118, 182, 255);
+}
+
+#digimon {
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* https://www.w3schools.com/css/css_align.asp */
+#digimon a {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 1rem 2rem;
+    background-color: #808080;
+    color: rgb(41, 41, 41);
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    border-radius: 25px;
+    box-shadow: rgb(209, 166, 26) 1px 1px;
+    margin-bottom: 7px;
+    margin-top: 15px;
+
+}
+
+/* https://stackoverflow.com/questions/7896402/how-can-i-replace-text-with-css */
+/* https://developer.mozilla.org/en-US/docs/Learn/CSS/Howto/Generated_content */
+#digimon a.InTraining:hover::after{
+    background-color: pink;
+    content: "In Training";
+    visibility: visible;
+    display: block;
+    position: absolute;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    font-size: 1.2em;
+    width: 150px;
+    box-shadow: rgb(147, 1, 177) 1px 1px;
+    
+}
+
+#digimon a.Rookie:hover::after{
+    background-color: #5892d4;
+    content: "Rookie";
+    visibility: visible;
+    display: block;
+    position: absolute;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    font-size: 1.2em;
+    width: 150px;
+    box-shadow: rgb(166, 186, 252) 1px 1px;
+    
+
+}
+
+#digimon a.Champion:hover::after{
+    background-color: #0d35a3;
+    color: rgb(224, 224, 224);
+    content: "Champion";
+    visibility: visible;
+    display: block;
+    position: absolute;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    font-size: 1.2em;
+    width: 150px;
+    box-shadow: rgb(166, 186, 252) 1px 1px;
+}
+
+#digimon a.Fresh:hover::after{
+    background-color: #9258d4;
+    content: "Fresh";
+    visibility: visible;
+    display: block;
+    position: absolute;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    font-size: 1.2em;
+    width: 150px;
+    box-shadow: rgb(252, 136, 190) 1px 1px;
+}
+
+#digimon a.Ultimate:hover::after{
+    background-color: #bddcff;
+    content: "Ultimate";
+    visibility: visible;
+    display: block;
+    position: absolute;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    font-size: 1.2em;
+    width: 150px;
+    box-shadow: rgb(47, 95, 255) 1px 1px;
+}
+
+#digimon a.Mega:hover::after{
+    background-color: #dd7d00;
+    content: "Mega";
+    visibility: visible;
+    display: block;
+    position: absolute;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    font-size: 1.2em;
+    width: 150px;
+    box-shadow: rgb(255, 232, 25) 1px 1px;
+}
+
+#digimon a.Armor:hover::after{
+    background-color: #58d48c;
+    content: "Armor";
+    visibility: visible;
+    display: block;
+    position: absolute;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    font-size: 1.2em;
+    width: 150px;
+    box-shadow: rgb(166, 186, 252) 1px 1px;
+}
+
+.digimonDetails {
+    /* display: none; */
+    width: 200px;
+}
+
+
+#image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 50%;
+    border-style: double;
+    box-shadow: rgba(68, 68, 68, 0.719) 2px 2px;
+}
+
+
+#title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
